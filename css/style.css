@@ -1,0 +1,237 @@
+/*
+ @Style.scss
+ */
+ body {
+   background-color: #dcdcdc;}
+
+.pict-background {
+  background-color: #43688c;
+  border-color: #53989a;
+  border-bottom-style: dashed;
+  padding-bottom: 1%; }
+
+.navbar-brand-modified {
+  font-size: 35px;
+  background-color: transparent;
+  margin-left:8px;}
+  .navbar-brand-modified a {
+    color: aliceblue; }
+    .navbar-brand-modified a:hover {
+      color: aliceblue;
+      text-decoration: underline; }
+    .navbar-brand-modified a:visited {
+      color: #dcdcdc; }
+    .navbar-brand-modified a:active {
+      color: aliceblue; }
+
+.navbar-right {
+  padding-left: 25%;
+  margin-right: 15px;}
+  .navbar-right .navbar-brand-modified {
+    font-size: 17px;
+    text-decoration: underline;
+    padding-left: 15px; }
+
+#titulo{
+  font-family: cursive;
+}
+
+#imagens img{
+  border-radius: 10px;
+}
+
+#logo {
+  float: left;
+  width: 5%;
+  padding-top: 9px; }
+
+form .container-fluid {
+  padding-bottom: 2%;
+  padding-top: 2%; }
+  form .container-fluid #app-screen {
+    width: 100%; }
+form #canvas-error {
+  background-color: crimson;
+  font-family: monospace;
+  font-size: 26px;
+  align-content: center; }
+
+.center-button {
+  padding-left: 25%; }
+
+footer {
+  padding-top: 10px;
+  }
+  footer .navbar-brand {
+    color: black;
+    font-size: 16px; }
+    footer .navbar-brand a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #43688c; }
+    footer .navbar-brand a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: skyblue; }
+  footer .navbar-brand-2 {
+    font-size: 11px; }
+    footer .navbar-brand-2 a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #43688c; }
+    footer .navbar-brand-2 a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: skyblue; }
+  footer .msg-coffee {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 1em; }
+    footer .msg-coffee a {
+      background-color: transparent;
+      text-decoration: underline;
+      color: #43688c; }
+    footer .msg-coffee a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      color: skyblue; }
+
+.aplicativos {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 15px; }
+  .aplicativos a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #43688c; }
+  .aplicativos a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: skyblue; }
+  .aplicativos img {
+    width: 50%; }
+
+.post-it {
+  background-image: url(../img/postit.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  height:355px;
+}
+
+.formula-style {
+  font-size: 1.1em; }
+
+.resultado--mostrar {
+  border: 2px solid #d9534f;
+  border-radius: 5px;
+  background-color:rgba(217,83,79,0.2);
+  padding: 1%;
+  margin: 0 auto;
+  font-size: 1.25em;
+  font-weight: bold; }
+
+  @media screen and (max-width: 768px) {
+      #principal{
+        /*background-image: url(../img/background_pict.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:1000px;
+      }
+
+      #jumbotronprincipal{
+        width:100%;
+        height:200px;
+      }
+
+      #jumbotronprincipal img{
+        margin-top:20px;
+        width: 100%;
+      }
+  }
+
+  @media screen and (min-width:768px) and (max-width: 1024px) {
+      #principal{
+        /*background-image: url(../img/background_pict.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:1000px;
+      }
+
+      #jumbotronprincipal{
+        width:100%;
+        height:180px;
+      }
+
+      #jumbotronprincipal img{
+        margin-top:15px;
+        width:300px;
+      }
+  }
+
+  @media screen and (min-width: 1025px) {
+    #principal{
+      /*background-image: url(../img/background_pict.jpg);*/
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top:30px;
+      padding-left:120px;
+      height:500px;
+    }
+
+    #jumbotronprincipal{
+      width:100%;
+      height:220px;
+      background-color: #dcdcdc;
+    }
+
+    #jumbotronprincipal img{
+      width: 400px;
+      padding:20px 0 0 0;
+      margin-left:-10px;
+    }
+
+    #jumbotronprincipaltexto{
+      padding:40px 40px 0 0;
+    }
+  }
+
+  @media screen and (min-width: 1800px){
+      #jumbotronprincipal img{
+        width: 400px;
+        padding:20px 0 0 70px;
+      }
+
+      #jumbotronprincipaltexto{
+        padding: 40px 142px 0 0;
+      }
+
+      #tampacote, #vel, #dist{
+        width: 250px;
+      }
+
+      #alinha{
+        margin-right:-40px;
+      }
+
+      #alinhamento{
+        margin-left: 98px;
+      }
+  }
+
+
+  #saibamais{
+    background-image: url(../img/background_entenda.jpg);
+  }
+
+  .saibamais p{
+    text-align:justify;
+  }
+
+  .saibamais img{
+    width:80%;
+  }
+/*# sourceMappingURL=style.css.map */
